@@ -1,0 +1,159 @@
+{% extends 'pgLayout.html' %}
+
+{% block title %}
+Welcome to URL Shortner
+{% endblock %}
+
+{% block body %}
+<center><h3> Heart Disease Prediction</h3></center><br>
+<form method="POST">
+<div class="col-25">
+      <label for="age">Age : </label>
+    </div>
+    <div class="col-75">
+       <input type="text" name="aged" id="age" placeholder="(12-90)" >
+    </div>
+
+     <div class="row">
+
+  </div>
+
+
+
+
+    <div class="col-25">
+      <label for="gender">Gender : </label>
+    </div>
+    <div class="col-75">
+         <select name="genderd" id="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+        </select>
+
+
+    </div>
+
+     <div class="row">
+
+  </div>
+
+
+
+
+    <div class="col-25">
+      <label for="chestpain">Chest Pain type : </label>
+    </div>
+    <div class="col-75">
+         <select name="chestpaind" id="chestpain">
+    <option value="typical angina">typical angina</option>
+    <option value="atypical angina">atypical angina</option>
+             <option value="non-anginal pain">non-anginal pain</option>
+    <option value="asymptomatic">asymptomatic</option>
+        </select>
+
+
+    </div>
+
+     <div class="row">
+
+  </div>
+
+
+
+        <div class="col-25">
+      <label for="bp">Blood Pressure : </label>
+    </div>
+    <div class="col-75">
+       <input type="text" name="bpd" id="bp" placeholder="mm Hg (0- 200)" >
+    </div>
+
+     <div class="row">
+
+  </div>
+
+
+
+        <div class="col-25">
+      <label for="heartrate">Maximum Heart rate : </label>
+    </div>
+    <div class="col-75">
+       <input type="text" name="heartrated" id="heartrate" placeholder="(0-200)" >
+    </div>
+
+     <div class="row">
+
+  </div>
+
+         <div class="col-25">
+      <label for="exeinc">Excercise include agina: </label>
+    </div>
+    <div class="col-75">
+        <select name="exeincd" id="exeinc">
+    <option value="yes">Yes</option>
+    <option value="no">No</option>
+        </select>
+
+    </div>
+
+     <div class="row">
+
+  </div>
+
+            <div class="col-25">
+      <label for="ST">ST depression : </label>
+    </div>
+    <div class="col-75">
+       <input type="text" name="STd" id="ST" placeholder="(0.0 - 5.0)" >
+    </div>
+
+     <div class="row">
+
+  </div>
+
+
+     <div class="col-25">
+      <label for="ca">Number of major vessels: </label>
+    </div>
+    <div class="col-75">
+       <input type="text" name="cad" id="ca" placeholder="(0 - 3)" >
+    </div>
+
+     <div class="row">
+
+  </div>
+
+
+
+     <div class="col-25">
+      <label for="thal"> thal : </label>
+    </div>
+    <div class="col-75">
+        <select name="thald" id="thal">
+    <option value="normal">normal</option>
+    <option value="fixed defect">fixed defect</option>
+                <option value="reversable defect">reversable defect</option>
+
+        </select>
+
+
+    </div>
+
+     <div class="row">
+    <input type="submit" name="submit" value="Submit"/>
+  </div>
+
+
+
+</form>
+
+<div class="col-25-op   "><br>
+      <label for="result">Heart Disease Result : </label>
+    </div>
+<div class="url-show"><br>
+    <h3 id="result">{{ result2 }}</h3></div>
+<div class="row">
+
+</div>
+
+
+{% endblock body %}
