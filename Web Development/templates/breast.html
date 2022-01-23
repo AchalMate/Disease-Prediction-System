@@ -1,0 +1,107 @@
+{% extends 'pgLayout.html' %}
+
+{% block title %}
+Welcome to URL Shortner
+{% endblock %}
+
+{% block body %}
+<center><h3> Breast Cancer Prediction</h3></center><br>
+<form method="POST">
+<div class="col-25">
+      <label for="TM">Texture Mean : </label>
+    </div>
+    <div class="col-75">
+       <input type="text" name="TMd" id="TM" placeholder="(0 - 1)" >
+    </div>
+
+     <div class="row">
+
+  </div>
+
+
+
+
+    <div class="col-25">
+      <label for="CM">Concavity Mean  : </label>
+    </div>
+    <div class="col-75">
+       <input type="text" name="CMd" id="CM" placeholder="(0 - 1)" >
+    </div>
+
+     <div class="row">
+
+  </div>
+
+
+
+
+    <div class="col-25">
+      <label for="sm">Symmetry Mean  : </label>
+    </div>
+    <div class="col-75">
+       <input type="text" name="smd" id="sm" placeholder="(0 - 1)" >
+    </div>
+
+     <div class="row">
+
+  </div>
+
+
+
+        <div class="col-25">
+      <label for="TSe">Textur Se  : </label>
+    </div>
+    <div class="col-75">
+       <input type="text" name="TSed" id="TSe" placeholder="(0 - 1)" >
+    </div>
+
+     <div class="row">
+
+  </div>
+
+
+
+        <div class="col-25">
+      <label for="Ase">Area Se : </label>
+    </div>
+    <div class="col-75">
+       <input type="text" name="Ased" id="Ase" placeholder="(0 - 1)" >
+    </div>
+
+     <div class="row">
+
+
+
+  </div>
+
+            <div class="col-25">
+      <label for="FDSe">Fractal Dimension Se  : </label>
+    </div>
+    <div class="col-75">
+       <input type="text" name="FDSed" id="FDSe" placeholder="(0.0 - 5.0)" >
+    </div>
+
+     <div class="row">
+<input type="submit" name="submit" value="Submit"/>
+  </div>
+
+
+
+
+
+
+
+
+</form>
+
+<div class="col-25-op   "><br>
+      <label for="result">Breast Cancer Result : </label>
+    </div>
+<div class="url-show"><br>
+    <h3 id="result">{{ result3 }}</h3></div>
+<div class="row">
+
+</div>
+
+
+{% endblock body %}
